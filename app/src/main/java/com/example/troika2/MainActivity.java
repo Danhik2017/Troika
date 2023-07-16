@@ -99,6 +99,8 @@ import java.io.IOException;
                         dump.write(tag);
                     }
                 }
+            } catch (Exception e) {
+                throw new RuntimeException(e);
             }
         }
     }
